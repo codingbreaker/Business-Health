@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Health Check</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Get Started Page -->
+    <div id="get-started" class="page">
+        <h1>Welcome to the Business Health Check</h1>
+        <p>Evaluate the health of your business and gain insights into key areas of performance. Begin your journey to understanding your business better!</p>
+        <button id="start-btn">Get Started</button>
+    </div>
+
+    <!-- Login Page -->
+    <div id="login-page" class="page hidden">
+        <h1>Enter Your Details</h1>
+        <form id="login-form">
+            <label for="name"><b>Name</b></label>
+            <input type="text" id="name" required>
+            
+            <label for="email"><b>Email</b></label>
+            <input type="email" id="email" required>
+            
+            <label for="phone"><b>Phone Number</b></label>
+            <input type="tel" id="phone" required>
+            <br>
+            <button type="submit">Continue</button>
+        </form>
+    </div>
+
+    <!-- Survey Page -->
+    <div id="survey" class="page hidden">
+        <h1>Business Health Check</h1>
+        
+        <!-- Segment 1 -->
+        <div id="segment1" class="segment">
+            <h2>Segment 1: Assessment of Business Health</h2>
+            <div id="questions1"></div>
+        </div>
+
+        <!-- Segment 2 -->
+        <div id="segment2" class="segment hidden">
+            <h2>Segment 2: Assessment of the Founder as a Business Owner</h2>
+            <div id="questions2"></div>
+        </div>
+
+        <!-- Segment 3 -->
+        <div id="segment3" class="segment hidden">
+            <h2>Segment 3: Assessment of the Founder as a Person</h2>
+            <div id="questions3"></div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div id="navigation">
+            <button id="prev-btn" class="hidden">Back</button>
+            <button id="next-btn">Next Segment</button>
+            <button id="check-score-btn" class="hidden">Check Score</button>
+        </div>
+    </div>
+
+    <!-- Results Page -->
+    <div id="results" class="page hidden">
+        <h2>Results</h2>
+        <div id="score-summary"></div>
+        <button id="restart-btn">Restart</button>
+    </div>
+
+    <script src="script.js" defer></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"> -->
+    </script>
+
+</body>
+</html>
